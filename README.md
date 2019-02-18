@@ -1,3 +1,82 @@
+
+# Salesforce Lightning Design System for React – Integration with UXPin Merge
+
+## About Salesforce Lightning Design System for React and this repository.
+
+Salesforce Lightning Design System for React is the [React](https://facebook.github.io/react/) implementation of the [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/).
+
+This repository represents a test implementation of Salesforce Lightning components with UXPin Merge Technology. To make this implementation few changes were introduced to Salesforce Lighting:
+* Every component is now stored in an individual directory – e.g. `./components/accordion/accordion-panel`.
+* In order to preserve all the component imports – `index.js` files were introduced. Index files are only importing and exporting a component in a given directory.
+* Preset directories were introduced. Preset files tell UXPin Merge how to initially render every component. E.g. `.componnets/accordion/presets/0-default.jsx` (both name of the directory – `presets` and name of the file `0-default.jsx` are UXPin Merge conventions)
+
+## About UXPin Merge
+
+Merge is a revolutionary technology that lets users import (and keep in sync) coded React.js components from GIT repositories to UXPin editor. 
+The imported components are 100% identical to components used by developers during the development process. 
+It means that components are going to look and, function (interactions, data) identical to the real product experienced by the users. 
+
+[UXPin](http://uxpin.com) is a leading code–based design platform.
+
+## How to use Merge integration with IBM Carbon?
+
+Merge is currently only available for selected beta users.
+
+1. Fork this repository and clone it to your computer.
+2. Install dependencies with `npm install`
+3. Log in to your UXPin beta account (approved for alpha and beta tests by UXPin Inc.)
+4. Start Merge dev environment with `npm start`
+
+If you wish to push Salesforce Lightning React components to your UXPin account or set-up a continues integration with a CI server - contact UXPin on Merge alpha Slack community.
+
+## Supported components
+
+| Component     |SF DS React Link | Components Status in Merge |
+| ------------- |:----------------|:-------------------|
+| Accordion | [Accordion](https://react.lightningdesignsystem.com/components/accordions/) | ✅ Full Support |
+| Alerts | [Alerts](https://react.lightningdesignsystem.com/components/alerts/)| ✅ Full Support |
+| Avatars | [Avatars](https://react.lightningdesignsystem.com/components/avatars/)| ✅ Full Support |
+| BrandBand | [Brand Band](https://react.lightningdesignsystem.com/components/brand-band/)| ✅ Full Support |
+| Breadcrumbs |[Breadcrumbs](https://react.lightningdesignsystem.com/components/breadcrumbs/)| ✅ Full Support |
+| ButtonGroup |[Breadcrumbs](https://react.lightningdesignsystem.com/components/button-groups/)| ✅ Full Support |
+| Button |[Buttons](https://react.lightningdesignsystem.com/components/buttons/)| ✅ Full Support |
+| Card | [Cards](https://react.lightningdesignsystem.com/components/cards/)| ✅ Full Support |
+| Checkbox | [Checkboxes](https://react.lightningdesignsystem.com/components/checkboxes/)| ✅ Full Support |
+| ColorPicker | [Color Pickers](https://react.lightningdesignsystem.com/components/color-picker/)| ✅ Full Support |
+| Combobox | [Comboboxes](https://react.lightningdesignsystem.com/components/comboboxes/)| ✅ Full Support. Additional interactivity added in CombovoxInteractive component. |
+| DataTable | [DataTables](https://react.lightningdesignsystem.com/components/data-table/)| Not supported yet |
+| Datepicker | [Datepickers](https://react.lightningdesignsystem.com/components/date-pickers/)| ✅ Full Support |
+| DropdownMenu | [Dropdown Menus](https://react.lightningdesignsystem.com/components/date-pickers/)| ✅ Full Support |
+| Icon | [Icons](https://react.lightningdesignsystem.com/components/icons/)| ✅ Full Support |
+| Illustration | [Illustrations](https://react.lightningdesignsystem.com/components/illustrations/)| ✅ Full Support |
+| Input | [Inputs](https://react.lightningdesignsystem.com/components/inputs/)| ✅ Full Support |
+| MediaObject | [Media Objects](https://react.lightningdesignsystem.com/components/media-objects/)| ✅ Full Support |
+| Modals | [Modals](https://react.lightningdesignsystem.com/components/modals/)| 🔻 Not Supported. Issues with absolutely positioned elements. |
+| PageHeader | [Page Headers](https://react.lightningdesignsystem.com/components/page-headers/)| 🔻 Not Supported. Issues with absolutely positioned elements. |
+| PillContainer | [Pill Container](https://react.lightningdesignsystem.com/components/pill-container/)| ✅ Full Support |
+| Pill | [Pills](https://react.lightningdesignsystem.com/components/pills/)| ✅ Full Support |
+| Popover | [Popovers](https://react.lightningdesignsystem.com/components/popovers/)| ✅ Full Support |
+| ProgressIndicator | [Progress Indicators](https://react.lightningdesignsystem.com/components/progress-indicators/)| ✅ Full Support. Additional interactivity added in CombovoxInteractive component. |
+| ProgressRring | [Progress Rings](https://react.lightningdesignsystem.com/components/progress-rings/)| ✅ Full Support |
+| RadioButtonGroup | [Radio Button Groups](https://react.lightningdesignsystem.com/components/radio-button-groups/)| ✅ Full Support |
+| RadioGroup | [Radio Groups](https://react.lightningdesignsystem.com/components/radio-groups/)| ✅ Full Support |
+| Radio | [Radios](https://react.lightningdesignsystem.com/components/radios/)| ✅ Full Support |
+| Slider | [Slider](https://react.lightningdesignsystem.com/components/sliders/)| ✅ Full Support |
+| Spinner | [Spinners](https://react.lightningdesignsystem.com/components/spinners/)| ✅ Full Support |
+| Spinner | [Spinners](https://react.lightningdesignsystem.com/components/spinners/)| ✅ Full Support |
+| SplitView | [Split Views](https://react.lightningdesignsystem.com/components/split-views/) | Not supported yet |
+| StatefulButton | [Stateful Buttons](https://react.lightningdesignsystem.com/components/stateful-buttons/) | ✅ Full Support | 
+| Tabs | [Tabs](https://react.lightningdesignsystem.com/components/tabs/) | ✅ Full Support | 
+| Textarea | [Textareas](https://react.lightningdesignsystem.com/components/textareas/) | ✅ Full Support | 
+| Timepicker | [Timepickers](https://react.lightningdesignsystem.com/components/time-pickers/) | ✅ Full Support | 
+| Toast | [Toasts](https://react.lightningdesignsystem.com/components/toasts/) | ✅ Full Support | 
+| Tooltip | [Tooltips](https://react.lightningdesignsystem.com/components/tooltips/) | ✅ Full Support | 
+| Tree | [Trees](https://react.lightningdesignsystem.com/components/trees/) | ✅ Full Support | 
+| VerticalNavigation [Vertical Navigation](https://react.lightningdesignsystem.com/components/vertical-navigation/) | Not supported yet. |
+| AppLauncher | [App Launcher](https://react.lightningdesignsystem.com/components/app-launchers) | ✅ Full Support | 
+| GlobalHeader | [Global Header](https://react.lightningdesignsystem.com/components/global-headers) | 🔻 Not Supported. Issues with automatically rendered <IconSettings /> – not compatible with Merge |
+
+---------------------------------------------------------------------
 # Design System for React
 
 ### Accessible, localization-friendly, presentational React components
