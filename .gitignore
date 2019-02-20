@@ -320,3 +320,6 @@ $RECYCLE.BIN/
 # Intellij IDE
 .idea/*
 *.iml
+
+# UXPin Merge
+.uxpin-merge

@@ -10,8 +10,8 @@ export IconSettings from './icon-settings';
 export SLDSAccordion from './accordion';
 export Accordion from './accordion';
 
-export SLDSAccordionPanel from './accordion/panel';
-export AccordionPanel from './accordion/panel';
+export SLDSAccordionPanel from './accordion/accordion-panel';
+export AccordionPanel from './accordion/accordion-panel';
 
 export SLDSAlert from './alert';
 export Alert from './alert';
@@ -75,17 +75,17 @@ export comboboxAddSubheadings from './combobox/add-subheadings';
 export SLDSGlobalHeader from './global-header';
 export GlobalHeader from './global-header';
 
-export SLDSGlobalHeaderButton from './global-header/button';
-export GlobalHeaderButton from './global-header/button';
+export SLDSGlobalHeaderButton from './global-header/global-header-button/global-header-button';
+export GlobalHeaderButton from './global-header/global-header-button/global-header-button';
 
-export SLDSGlobalHeaderDropdown from './global-header/dropdown';
-export GlobalHeaderDropdown from './global-header/dropdown';
+export SLDSGlobalHeaderDropdown from './global-header/global-header-dropdown/global-header-dropdown';
+export GlobalHeaderDropdown from './global-header/global-header-dropdown/global-header-dropdown';
 
-export SLDSGlobalHeaderProfile from './global-header/profile';
-export GlobalHeaderProfile from './global-header/profile';
+export SLDSGlobalHeaderProfile from './global-header/global-header-profile/global-header-profile';
+export GlobalHeaderProfile from './global-header/global-header-profile/global-header-profile';
 
-export SLDSGlobalHeaderSearch from './global-header/search';
-export GlobalHeaderSearch from './global-header/search';
+export SLDSGlobalHeaderSearch from './global-header/global-header-search/global-header-search';
+export GlobalHeaderSearch from './global-header/global-header-search/global-header-search';
 
 export SLDSGlobalNavigationBar from './global-navigation-bar';
 export GlobalNavigationBar from './global-navigation-bar';
@@ -108,8 +108,8 @@ export DataTableCell from './data-table/cell';
 export SLDSDataTableHighlightCell from './data-table/highlight-cell';
 export DataTableHighlightCell from './data-table/highlight-cell';
 
-export SLDSDataTableColumn from './data-table/column';
-export DataTableColumn from './data-table/column';
+export SLDSDataTableColumn from './data-table/data-table-column';
+export DataTableColumn from './data-table/data-table-column';
 
 export SLDSDataTableRowActions from './data-table/row-actions';
 export DataTableRowActions from './data-table/row-actions';
