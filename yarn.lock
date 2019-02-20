@@ -332,7 +332,7 @@
     "@babel/helper-create-class-features-plugin" "^7.3.0"
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-proposal-export-default-from@^7.0.0-beta.44":
+"@babel/plugin-proposal-export-default-from@^7.0.0-beta.44", "@babel/plugin-proposal-export-default-from@^7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-export-default-from/-/plugin-proposal-export-default-from-7.2.0.tgz#737b0da44b9254b6152fe29bb99c64e5691f6f68"
   dependencies:
@@ -1105,12 +1105,13 @@
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-5.5.0.tgz#146c2a29ee7d3bae4bf2fcb274636e264c813c45"
 
-"@uxpin/merge-cli@1.2.0-dev":
-  version "1.2.0-dev"
-  resolved "https://registry.yarnpkg.com/@uxpin/merge-cli/-/merge-cli-1.2.0-dev.tgz#413de4f09753312e9dcf395a8e6579d11175142d"
+"@uxpin/merge-cli@^1.2.2-dev":
+  version "1.2.2-dev"
+  resolved "https://registry.yarnpkg.com/@uxpin/merge-cli/-/merge-cli-1.2.2-dev.tgz#0e691afd436613e0611a6573480222620f621a0a"
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/plugin-proposal-class-properties" "^7.2.3"
+    "@babel/plugin-proposal-export-default-from" "^7.2.0"
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
     babel-loader "^8.0.5"
