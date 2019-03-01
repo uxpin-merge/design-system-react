@@ -2,6 +2,15 @@ module.exports = {
 	presets: [
 	  [
 		'@babel/preset-env',
+		{
+			"targets": {
+				"browsers": [
+					"last 2 versions",
+					"ie 11"
+				],
+				"node": "8.9.4"
+			}
+		}
 	  ],
 	  [
 		'@babel/preset-react',
@@ -23,11 +32,7 @@ module.exports = {
 	  [
 		"root-import"
 	  ]
-	],
-	ignore: [
-		"preset/**",
-		"*/docs.json",
-	],
+	]
   }
 
 
