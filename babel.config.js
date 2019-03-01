@@ -24,6 +24,10 @@ module.exports = {
 		"root-import"
 	  ]
 	],
+	ignore: [
+		"preset/**",
+		"*/docs.json",
+	],
   }
 
 
