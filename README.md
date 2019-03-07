@@ -25,7 +25,7 @@ Merge is currently only available for selected beta users.
 1. Fork this repository and clone it to your computer.
 2. Install dependencies with `npm install`
 3. Log in to your UXPin beta account (approved for alpha and beta tests by UXPin Inc.)
-4. Start Merge dev environment with `npm start`
+4. Start Merge dev environment with `npm run uxpin:experiment`
 
 If you wish to push Salesforce Lightning React components to your UXPin account or set-up a continues integration with a CI server - contact UXPin on Merge alpha Slack community.
 
