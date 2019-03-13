@@ -55,11 +55,6 @@ const config = {
         test: /\.(eot|woff|woff2|ttf)$/,
         loader: 'url-loader?limit=100000',
       },
-			{
-				test: /\.json$/,
-				loader: 'url-loader?limit=100000',
-			},
-
 		],
   },
   plugins: [new StringReplacePlugin()],
