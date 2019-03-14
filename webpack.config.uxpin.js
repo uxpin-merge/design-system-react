@@ -53,13 +53,13 @@ const config = {
       },
       {
         test: /\.(svg|gif|jpe?g|png)$/,
-        loader: 'file-loader?limit=10000',
+        loader: 'url-loader?limit=10000',
       },
       {
         test: /\.(eot|woff|woff2|ttf)$/,
         loader: 'url-loader?limit=100000',
       },
-    ],
+		],
   },
   plugins: [new StringReplacePlugin()],
 };
