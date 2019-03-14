@@ -42,11 +42,7 @@ const config = {
           path.join(__dirname, 'tests'),
           path.join(__dirname, 'utilities'),
         ],
-			},
-			{
-				test: /\.json$/,
-				loader: 'raw-loader',
-			},
+      },
       {
         test: /\.css$/,
         loaders: ['style-loader', 'css-loader'],
