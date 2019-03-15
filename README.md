@@ -1,6 +1,8 @@
 
 # Salesforce Lightning Design System for React – Integration with UXPin Merge
 
+![alt text](https://i.imgur.com/IDYX1hv.png "Salesforce Lightning in UXPin Merge")
+
 ## About Salesforce Lightning Design System for React and this repository.
 
 Salesforce Lightning Design System for React is the [React](https://facebook.github.io/react/) implementation of the [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/).
@@ -18,7 +20,7 @@ It means that components are going to look and, function (interactions, data) id
 
 [UXPin](http://uxpin.com) is a leading code–based design platform.
 
-## How to use Merge integration with IBM Carbon?
+## How to use Merge integration with Salesforce Lightning?
 
 Merge is currently only available for selected beta users.
 
@@ -75,6 +77,41 @@ If you wish to push Salesforce Lightning React components to your UXPin account 
 | VerticalNavigation [Vertical Navigation](https://react.lightningdesignsystem.com/components/vertical-navigation/) | Not supported yet. |
 | AppLauncher | [App Launcher](https://react.lightningdesignsystem.com/components/app-launchers) | ✅ Full Support | 
 | GlobalHeader | [Global Header](https://react.lightningdesignsystem.com/components/global-headers) | 🔻 Not Supported. Issues with automatically rendered <IconSettings /> – not compatible with Merge |
+
+# Examples
+
+![alt text](https://i.imgur.com/ISSVXKx.gif "SF Lightning Color Picker in UXPin Merge")
+![alt text](https://i.imgur.com/Z3aDrNP.gif "SF Lightning Date Picker in UXPin Merge")
+
+## CI Server Integration (available only for *beta users*)
+
+The recommended approach to integrating React.js components with UXPin is via Continues Integration server (Circle CI, Travis...). 
+This approach provides an opportunity to establish a real single source of truth for design and development. 
+
+After the integration with a CI server every commit to master can (if this is how your CI is configured) automatically update library in UXPin. 
+
+This repository consits of [an example of integration with Circle CI](https://github.com/uxpin-merge/material-ui-merge/blob/master/.circleci/config.yml). 
+If you wish to reuse it follow these steps:
+1. Make sure that you forked this repository.
+2. Go to https://circleci.com and sign-up for an account with your Github credentials.
+3. Start a new project and track your fork of this repository.
+4. Go into your [UXPin](http://uxpin.com) account, enter UXPin editor (in any project).
+5. While inside of UXPin editor open Design Systems Libraries panel and create a new library. Copy the library token (keep it secure it provides access to your library!)
+
+![alt text](https://github.com/uxpin-merge/material-ui-merge/blob/master/img/merge_ci.gif "UXPin Design System Library")
+
+If you're not seeing the screen above – contact your account manager. You're not in Merge Beta group yet.
+
+6. Go into settings of your project in Circle CI. Enter section `Environment Variables` and click on `Add new variable`.
+7. Name the new variable `UXPIN_AUTH_TOKEN` and pass your token copied from the UXPin library (#5) as its value.
+
+That's it! The next change in the master branch of your fork will automatically trigger Circle CI and send the newest version of your components to UXPin.
+
+Integration with CI server leads to a powerful workflow, with that however comes couple of dangers, so please be aware of them!
+* ⚠️ Don't share your UXPin authorization token with anyone. It leads straight to your design system library in UXPin. Keep the token safe in the CI app!
+* ⚠️ Don't keep your UXPin authorization token in any file checked into your git repository.
+* ⚠️ Treat contributing to Master branch just like deploying production code. *Any* change will be automatically reflected in the UXPin library and projects. 
+If you want to experiment with components – start a new branch and use Merge dev environment – experiment mode (in this repository launched via `npm start`)
 
 ---------------------------------------------------------------------
 # Design System for React
