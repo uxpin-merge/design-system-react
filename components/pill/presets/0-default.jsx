@@ -4,6 +4,7 @@ import Pill from '../pill.jsx';
 
 export default (
 	<Pill
+		uxpId="pill"
 		labels={{
 			label: 'Pill Label',
 			title: 'Full pill label verbiage mirrored here',

@@ -4,10 +4,11 @@ import Toast from '../toast';
 
 export default (
 	<Toast
-	labels={{
-		heading: 'Can’t share file “report-q3.pdf” with the selected users.',
-	}}
-	variant="warning"
-	style={{"width": "100%"}}
-/>
+		uxpId="toast"
+		labels={{
+			heading: 'Can’t share file “report-q3.pdf” with the selected users.',
+		}}
+		variant="warning"
+		style={{ 'width': '100%' }}
+	/>
 );

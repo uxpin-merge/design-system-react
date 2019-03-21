@@ -188,5 +188,5 @@ const sampleNodes = {
 };
 
 export default (
-	<Tree id="slds-tree" nodes={sampleNodes} />
+	<Tree uxpId="tree" id="slds-tree" nodes={sampleNodes} />
 )
