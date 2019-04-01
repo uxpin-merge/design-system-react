@@ -1,12 +1,14 @@
 /* eslint-disable filenames/match-regex */
 import * as React from 'react';
 import Card from '../card.jsx';
+import Icon from '../../icon';
 
 export default (
 	<Card
-		header="<CardHeader icon={<Avatar variant='entity' />} heading='Merge' />"
-		footer="Merge"
+		heading="Card Heading"
+		icon={<Icon category="standard" uxpId="2" name="avatar"/>}
+		footer="Card footer"
 		uxpId="0"
-		style={{"fontFamily": "Salesforce Sans"}}
+		style={{ 'fontFamily': 'Salesforce Sans' }}
 	/>
 );

@@ -5,8 +5,9 @@ import Button from '../../button/button.jsx';
 
 export default (
 	<Tooltip
+		uxpId="tooltip"
 		align="right" content="Tooltip with right alignment"
 	>
-		<Button label="Hover or focus to Open" uxpId="1" />
+		<Button label="Hover or focus to Open" uxpId="tooltip.button"/>
 	</Tooltip>
 );

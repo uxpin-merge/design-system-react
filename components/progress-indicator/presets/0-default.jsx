@@ -16,6 +16,7 @@ const steps = [
 
 export default (
 	<ProgressIndicator
+		uxpId="progressIndicator"
 		steps={steps}
 	/>
 );

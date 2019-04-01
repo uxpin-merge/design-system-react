@@ -4,6 +4,7 @@ import Slider from '../slider.jsx';
 
 export default (
 	<Slider
+		uxpId="slider"
 		label="Slider Label"
 		style={{ fontFamily: 'Salesforce Sans' }}
 	/>
